@@ -1,14 +1,11 @@
-import React from 'react'
-import { ThemeProvider } from 'styled-components'
+import React, { ThemeProvider } from './components/Contexts/ThemeContext'
 
 import GlobalStyle from './styles/global'
 import Layout from './components/Layout'
 
-import themes from './styles/themes'
-
 function App() {
   return (
-    <ThemeProvider theme={themes.dark}>
+    <ThemeProvider>
       <GlobalStyle />
       <Layout />
     </ThemeProvider>
